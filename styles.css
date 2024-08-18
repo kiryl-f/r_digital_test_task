@@ -1,0 +1,115 @@
+header {
+    display: flex;
+    justify-content: space-between; /* Space between the elements */
+    align-items: center;            /* Center items vertically */
+    padding: 10px 30px;             /* Adjust padding as needed */
+    color: #fff;
+    background-color: #AE97E8;
+}
+
+body {
+    background-color: #AE97E8;
+}
+
+#elfen_lied {
+    font-family: 'LeMurmure', sans-serif;
+    font-size: 45px;
+    color: white;
+    margin: 0; /* Remove default margins */
+}
+
+.nav_menu {
+    display: flex;
+    flex: 1;                      /* Take up remaining space */
+    justify-content: space-between;      /* Center the navigation links */
+    background-color: #AE97E8;
+}
+
+
+.nav_menu a {
+    font-family: EuclidCircularA;
+    src: url("Euclid\ Circular\ A\ Medium.ttf") format("opentype");
+    margin: 0 15px; /* Adjust space between links */
+    color: white; /* Ensure links are visible */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px;
+}
+
+.nav-item-container {
+    display: flex;               /* Use flexbox for alignment */
+    align-items: center;         /* Vertically center items */
+    justify-content: center;     /* Optionally center items horizontally */
+    margin-left: 100px;
+    width: auto;                 /* Adjust width to content */
+}
+
+.nav-item-container a {
+    text-decoration: none;       /* Remove underline from the link */
+    color: inherit;              /* Inherit color from parent or set a specific color */
+}
+
+
+#lamp_section {
+    display: flex;
+    flex-direction: column;    /* Align elements vertically */
+    align-items: flex-start;       /* Center items horizontally */
+    margin-left: 7%;
+    margin-top: 5%;
+}
+
+#item_of_the_day {
+    font-family: 'LeMurmure', sans-serif;
+    font-size: 18px;           /* Adjust the font size as needed */
+    color: #D9FF5A;
+    z-index: 1;
+}
+
+#main_lamp_container {
+    display: grid;
+    justify-items: center;     
+    align-items: center;       
+    position: relative;        /* Necessary for z-index context */
+}
+
+#benj_moore, #main_lamp, #item_of_the_day {
+    grid-area: 1 / 1;          /* Stack the images on top of each other */
+}
+
+#benj_moore {
+    z-index: 1;
+}
+
+#main_lamp {
+    z-index: 2;
+}
+
+
+.products {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-grid {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+
+@font-face {
+    font-family: LeMurmure;
+    src: url("le-murmure.otf") format("opentype");
+}
+
+@font-face {
+    font-family: EuclidCircularA;
+    src: url("Euclid\ Circular\ A\ Medium.ttf");
+}
